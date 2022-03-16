@@ -13,7 +13,7 @@ class Testcalc(unittest.TestCase):
 
     def test_mul(self):
         result = app.mul(4,3)
-        self.assertEqual(result,12)
+        self.assertEqual(result,2)
 
 
 
