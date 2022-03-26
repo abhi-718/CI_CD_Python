@@ -15,6 +15,12 @@ class Testcalc(unittest.TestCase):
         result = app.mul(4,3)
         self.assertEqual(result,12)
 
+    def test_square(self):
+        result = app.square(5)
+        self.assertEqual(result,25)
+    
+    
+
 
 
 
