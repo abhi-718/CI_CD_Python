@@ -11,8 +11,8 @@ def sub(a,b):
 def mul(a,b):
     return a * b
 
-def square(a):
-    return a * a
+def power(a,b):
+    return a ** b
 
 def divide(a,b):
     try:

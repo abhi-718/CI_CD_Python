@@ -16,8 +16,8 @@ class Testcalc(unittest.TestCase):
         result = app.mul(4,3)
         self.assertEqual(result,12)
 
-    def test_square(self):
-        result = app.square(5)
+    def test_power(self):
+        result = app.power(5,2)
         self.assertEqual(result,25)
     
     def test_divide(self):
