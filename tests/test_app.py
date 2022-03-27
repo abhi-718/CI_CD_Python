@@ -1,4 +1,5 @@
 import unittest
+from unittest import result
 from src import app
 
 class Testcalc(unittest.TestCase):
@@ -19,8 +20,17 @@ class Testcalc(unittest.TestCase):
         result = app.square(5)
         self.assertEqual(result,25)
     
+    def test_divide(self):
+        result = app.divide(6,3)
+        self.assertEqual(result,2)
+        self.assertRaises(Exception,app.divide,4,0)
+
+        with self.assertRaises(Exception, msg="Try again"):
+            app.divide(4,0)
+    
     
 
 
-
+if __name__ == '__main__':
+    unittest.main()
 
